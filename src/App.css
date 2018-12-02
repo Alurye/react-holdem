@@ -1,32 +1,41 @@
-.App {
-  text-align: center;
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #efefef;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.poker_table {
+    position: relative;
+    width:40vw;
+    height:40vw;
+    border-radius: 50%;
+    border:10px solid #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.felt {
+  background-image: url('./img/green-felt.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 
-.App-link {
-  color: #61dafb;
+.poker_table > div {
+  position:relative;
+  height:114%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player {
+position: absolute;
+display: flex;
+flex-flow:column;
+justify-content: flex-start;
+align-items: center;
+/* background-color: lightblue; */
+border-radius: 50%;
+width: 100%;
+height: 100%;
 }
